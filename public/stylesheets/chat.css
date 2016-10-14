@@ -1,0 +1,314 @@
+body{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family:"microsoft yahei";
+  color: #fff;
+  background: #000;
+}
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  font-family:"microsoft yahei";
+  color: #fff;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+}
+
+
+.wrapper-menu {
+    height: 50px;
+    background: #eee;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper-menu .logo {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    color: #333;
+    min-width: 120px;
+    text-align: center;
+}
+
+.wrapper-menu .menu {
+    width: 100%;
+    text-align: right;
+    padding: 0 10px;
+}
+
+.wrapper-content {
+  background: #666;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper-content .list {
+  background: #333;
+  min-width: 70px;
+}
+
+.wrapper-content .content {
+  background: #fff;
+  /*border:1px solid #eee;*/
+  width: 100%;
+}
+
+.wrapper-add {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  top: -100%;
+}
+
+.wrapper-add .return {
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    background: #333;
+    padding: 12px;
+}
+
+.wrapper-add .return label {
+  color:#fff;
+  font-size: 16px;
+}
+
+.wrapper-add .search {
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  background: #eee;
+  padding:8px;
+}
+
+.search-input {
+  width: 100%;
+  min-height: 26px;
+  padding: 6px;
+  font-size: 13px;
+  color:#666;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
+}
+
+.search-input:focus {
+  border-color: #51a7e8;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5)
+}
+
+.wrapper-add .list {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  padding:0 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-add .list li {
+  height: 60px;
+  background: #fff;
+  border-bottom:1px solid #e5e5e5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.wrapper-add .list li img {
+  height: 40px;
+  min-width: 40px;
+  background: #333;
+}
+
+.wrapper-add .list li p {
+  height: 40px;
+  width: 100%;
+
+  margin: 0;
+  padding:0 10px;
+}
+
+.wrapper-add .list li label {
+  height: 30px;
+  min-width: 60px;
+  background: #009688;
+  margin: 0;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  color: #fff;
+}
+
+.wrapper-add .list li p .title{
+  display: block;
+  font-size: 16px;
+  color: #333;
+}
+.wrapper-add .list li p .cnt{
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #999;
+}
+
+
+.wrapper-content .list li {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.wrapper-content .list li img {
+  height: 50px;
+  width: 50px;
+  border:1px solid #555;
+  background: #fff;
+}
+
+.wrapper-content .list li img:hover {
+  border-color: #51a7e8;
+}
+
+.wrapper-content .content {
+  display: flex;
+  flex-direction: column;
+   justify-content: flex-end;
+}
+
+.wrapper-content .content .box-send {
+  height: 56px;
+  background: #666;
+  padding: 10px;
+}
+
+.wrapper-content .content .box-content {
+  /*background: #eaeaea;*/
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.chat-input {
+    height: 36px;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    font: 16px/1.5 "microsoft yahei";
+    align-items: flex-end;
+    color: #333;
+}
+
+.hide {
+  display: none;
+}
+
+.box-content .reverse {
+  flex-direction: row-reverse;
+}
+
+.box-content li {
+  display: flex;
+  flex-direction: row;
+  margin:0;
+  padding: 10px;
+}
+
+.box-content .thumb {
+    background: #aaa;
+    height: 38px;
+    width: 38px;
+    margin: 0px;
+}
+
+.box-content .thumb img {
+    width: 38px;
+    background: #fff;
+}
+
+.box-content .bubble {
+    min-height: 1em;
+    display: block;
+    vertical-align: top;
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 9px 13px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.box-content .other {
+    background-color: #666;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.box-content .me {
+    background-color: #b2e281;
+    color: #000;
+    margin-right: 10px;
+}
+
+
+.box-content .me:after {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: " ";
+    right: -12px;
+    top: 12px;
+    border: 6px solid transparent;
+    border-left: 6px solid #b2e281;
+}
+
+.box-content .other:after {
+  width: 0;
+  height: 0;
+  position: absolute;
+  content: " ";
+  left: -12px;
+  top: 12px;
+  border: 6px solid transparent;
+  border-right: 6px solid #666;
+}
+
+.wrapper-content .list .count {
+  display: none;
+    position: absolute;
+    right: -9px;
+    top: 4px;
+    background: #ff0000;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    text-align: center;
+    font: 12px/1 "microsoft yahei";
+    padding: 2px 0;
+}
+
+
+.box-content::-webkit-scrollbar {
+    display: none;
+}
